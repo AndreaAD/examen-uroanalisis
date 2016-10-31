@@ -57,7 +57,6 @@ class EloquentExamenUroanalisis implements ExamenUroanalisisInterface {
 
     public function save($examen_uroanalisis, $input)
     {
-
         $examen_uroanalisis->color = $input['color'];
         $examen_uroanalisis->aspecto = $input['aspecto'];
         $examen_uroanalisis->densidad_urinaria = $input['densidad_urinaria'];
@@ -75,7 +74,6 @@ class EloquentExamenUroanalisis implements ExamenUroanalisisInterface {
         $examen_uroanalisis->celulas_epiteliales = $input['celulas_epiteliales'];
         $examen_uroanalisis->hematies = $input['hematies'];
         $examen_uroanalisis->moco = $input['moco'];
-
 
         if ($examen_uroanalisis->validate())
         {

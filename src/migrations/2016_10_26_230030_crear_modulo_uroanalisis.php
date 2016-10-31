@@ -32,7 +32,6 @@ class CrearModuloUroanalisis extends Migration {
             $table->string('celulas_epiteliales')->nullable();
             $table->string('hematies')->nullable();
             $table->string('moco')->nullable();
-
             $table->dateTime('created_at')->nullable();
             $table->dateTime('updated_at')->nullable();
         });
@@ -48,7 +47,7 @@ class CrearModuloUroanalisis extends Migration {
         if (Schema::hasTable('permissions') && Schema::hasTable('modulos'))
         {
             $id_modulo = DB::table('modulos')->insertGetId(
-                ['nombre' => 'Examen Uroanalisis', 'icono' => 'fa-folder-o', 'descripcion' => 'Paquete para gestionar el examen de uroanalisis de sus pacientes', 'predeterminado' => 0, 'valor'  => 5000]
+                ['nombre' => 'Examen Uroanalisis', 'icono' => 'fa-folder-o', 'descripcion' => 'Paquete para gestionar el examen de uroanalisis de sus pacientes', 'predeterminado' => 0, 'valor'  => 10000]
             );
 
             DB::table('permissions')->insert([
