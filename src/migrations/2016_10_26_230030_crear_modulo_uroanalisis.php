@@ -47,11 +47,11 @@ class CrearModuloUroanalisis extends Migration {
         if (Schema::hasTable('permissions') && Schema::hasTable('modulos'))
         {
             $id_modulo = DB::table('modulos')->insertGetId(
-                ['nombre' => 'Examen Uroanalisis', 'icono' => 'fa-folder-o', 'descripcion' => 'Paquete para gestionar el examen de uroanalisis de sus pacientes', 'predeterminado' => 0, 'valor'  => 10000]
+                ['nombre' => 'Examen uroanálisis', 'icono' => 'fa-folder-o', 'descripcion' => 'Paquete para gestionar el examen de uroanálisis de sus pacientes', 'predeterminado' => 0, 'valor'  => 10000]
             );
 
             DB::table('permissions')->insert([
-                ['name' => 'gestionar_examen_uroanalisis', 'display_name' => 'Examen Uroanalisis', 'id_modulo' => $id_modulo]
+                ['name' => 'gestionar_examen_uroanalisis', 'display_name' => 'Examen uroanálisis', 'id_modulo' => $id_modulo]
             ]);
         }
 	}

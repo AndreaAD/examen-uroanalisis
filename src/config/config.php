@@ -22,6 +22,6 @@ return [
 	'vista_lista' => 'app.list',
 
 	//vistas secciones
-	'formulario' => 'packages.jy.examen_uroanalisis.formulario',
-	'historial_examen_uroanalisis' => 'packages.jy.examen_uroanalisis.historial_uroanalisis',
+	'formulario' => 'packages.jy.examen-uroanalisis.formulario',
+	'historial_examen_uroanalisis' => 'packages.jy.examen-uroanalisis.historial_uroanalisis',
 ];
