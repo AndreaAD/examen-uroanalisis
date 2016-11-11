@@ -57,6 +57,7 @@ class EloquentExamenUroanalisis implements ExamenUroanalisisInterface {
 
     public function save($examen_uroanalisis, $input)
     {
+        $examen_uroanalisis->id_consulta = $input['id_consulta'];
         $examen_uroanalisis->color = $input['color'];
         $examen_uroanalisis->aspecto = $input['aspecto'];
         $examen_uroanalisis->densidad_urinaria = $input['densidad_urinaria'];

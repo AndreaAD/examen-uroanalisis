@@ -15,7 +15,7 @@
     @elseif ( $status == 'success' )
         @include('includes.msgok')
     @endif
-    {{ Form::open(['url' => Config::get('examen-coprologico::prefijo_ruta').'/', 'method' => (!$examen_uroanalisis || $examen_uroanalisis['id_consulta'] != $consulta['id']? 'post' : 'put')]) }}
+    {{ Form::open(['url' => Config::get('examen-uroanalisis::prefijo_ruta').'/', 'method' => (!$examen_uroanalisis || $examen_uroanalisis['id_consulta'] != $consulta['id']? 'post' : 'put')]) }}
         <fieldset>
             <div class="row">
                 <div class="col-xs-12">

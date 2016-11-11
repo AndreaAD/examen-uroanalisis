@@ -23,5 +23,5 @@ return [
 
 	//vistas secciones
 	'formulario' => 'packages.jy.examen-uroanalisis.formulario',
-	'historial_examen_uroanalisis' => 'packages.jy.examen-uroanalisis.historial_uroanalisis',
+	'historial_examen_uroanalisis' => 'packages.jy.examen-uroanalisis.historial_examen_uroanalisis',
 ];
