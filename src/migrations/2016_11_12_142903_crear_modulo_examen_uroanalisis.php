@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CrearModuloUroanalisis extends Migration {
+class CrearModuloExamenUroanalisis extends Migration {
 
 	/**
 	 * Run the migrations.
